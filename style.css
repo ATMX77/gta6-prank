@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+body {
+  background: url('https://i.imgur.com/w4cN4JN.png') repeat;
+  animation: moveBG 10s infinite alternate ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes moveBG {
+  0% {
+    background-position: center top;
+  }
+  100% {
+    background-position: center bottom;
+  }
+}
+
+.button-container {
+  text-align: center;
+}
+
+.title {
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.download-btn {
+  padding: 20px 40px;
+  font-size: 22px;
+  color: white;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px #000;
+}
+
+.download-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.9);
+}
